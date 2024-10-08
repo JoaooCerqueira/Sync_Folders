@@ -5,27 +5,6 @@ import shutil
 import logging
 import hashlib
 
-# os: Para manipulação de arquivos e diretórios.
-# shutil: Para copiar e remover arquivos e diretórios.
-# time: Para intervalos de sincronização.
-# argparse: Para leitura dos argumentos da linha de comando.
-# logging: Para registrar as operações realizadas.
-
-#tarefas a fazer:
-
-# linha de comando: caminhos das pastas (pasta original, pasta replica), o intervalo de sincronização e o caminho do ficheiro de registo log
-#
-# 1. faz um while true para conseguir estar sempre a executar em tempo real
-# 2. comecar por ver se o arquivo original tem o mesmo numero de arquivos.
-# 3. se tiver mais 1 ou menos 1 faz o update na pasta replica
-# 4. faz um for para cada artigo
-# 5. se tiver o mesmo numero de arquivos verifica o tamanho e o timestamp e cada artigo.
-# 6. se o tamanho e o timestamp forem diferentes atualiza
-# 7. se forem igual verifica para cada artigo o MD5.
-# 8. se forem diferentes atualiza
-# 9. se forem iguais passa ao proximo arquivo
-# 10. acaabando for faz se um time.sleep() durante o tempo que for inserido na linha de comandos
-# 11. terminando o sleep volta a ponto 2
 
 #calcular o MD5 do ficheiro
 def calculate_MD5(file_path,chunk_size=8192):
